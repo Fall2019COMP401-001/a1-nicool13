@@ -9,7 +9,7 @@ public class A1Example {
 		// you know what Eclipse thinks it is using and
 		// so that you can confirm that it is 10.0 or higher.
 		
-		System.out.println("Your Java version: " + System.getProperty("java.version"));
+		// System.out.println("Your Java version: " + System.getProperty("java.version"));
 		
 		// Set up scanner object to read space-separated values
 		// from console input
@@ -17,7 +17,7 @@ public class A1Example {
 		Scanner scan = new Scanner(System.in);
 
 		// Read in count of numbers to process
-		
+		 
 		int count = scan.nextInt();
 		
 		
