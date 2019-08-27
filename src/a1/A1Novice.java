@@ -1,5 +1,6 @@
 package a1;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class A1Novice {
@@ -10,6 +11,9 @@ public class A1Novice {
 
 
 		// Your code follows here.
+		
+		// Creates decimal format of two decimal places
+		DecimalFormat df2 = new DecimalFormat("#.##");
 		
 		// Count holds the number of people the outer "for" loop will cycle through.
 		int count = scan.nextInt();
@@ -24,7 +28,7 @@ public class A1Novice {
 			String lastName = scan.next();
 			
 			// Declare and initialize variable to hold total cost of all the items for each person
-			double total = 0;
+			double total = 0.00;
 			
 			// Variable holds the amount of items the inner loop will cycle through  
 			int items = scan.nextInt();
@@ -44,7 +48,7 @@ public class A1Novice {
 			}
 			  
 			// Prints the first initial, last name, and money paid for each person
-			System.out.println(firstInitial + ". " + lastName + ": " + total);
+			System.out.println(firstInitial + ". " + lastName + ": " + df2.format(total));
 			
 		}
 		
