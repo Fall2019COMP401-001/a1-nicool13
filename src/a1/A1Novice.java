@@ -12,8 +12,7 @@ public class A1Novice {
 
 		// Your code follows here.
 		
-		// Creates decimal format of two decimal places
-		DecimalFormat df2 = new DecimalFormat("#.##");
+		
 		
 		// Count holds the number of people the outer "for" loop will cycle through.
 		int count = scan.nextInt();
@@ -47,6 +46,9 @@ public class A1Novice {
 
 			}
 			  
+			// Creates decimal format of two decimal places
+			DecimalFormat df2 = new DecimalFormat("#.##");
+			
 			// Prints the first initial, last name, and money paid for each person
 			System.out.println(firstInitial + ". " + lastName + ": " + df2.format(total));
 			
