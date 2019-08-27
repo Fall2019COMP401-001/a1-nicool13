@@ -47,7 +47,7 @@ public class A1Novice {
 			}
 			  
 			// Creates decimal format of two decimal places
-			DecimalFormat df2 = new DecimalFormat("#.##");
+			DecimalFormat df2 = new DecimalFormat("0.00");
 			
 			// Prints the first initial, last name, and money paid for each person
 			System.out.println(firstInitial + ". " + lastName + ": " + df2.format(total));
