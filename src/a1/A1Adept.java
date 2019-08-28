@@ -54,9 +54,9 @@ public class A1Adept {
 	
  static void biggest(String[] names, double[] pays) {
 	
-	int i = 0;
+	int i = 1;
 	int person = 0;
-	while (i < names.length - 1) {
+	while (i <= names.length - 1) {
 		if (pays[i] < pays[person]) {
 			i++;
 		} else {
@@ -74,9 +74,9 @@ public class A1Adept {
 	
 	 static void smallest(String[] names, double[] pays) {
 		
-		int i = 0;
+		int i = 1;
 		int person = 0;
-		while (i < names.length - 1) {
+		while (i <= names.length - 1) {
 			if (pays[i] > pays[person]) {
 				i++;
 			} else {
