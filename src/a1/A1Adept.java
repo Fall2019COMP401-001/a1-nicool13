@@ -33,6 +33,7 @@ public class A1Adept {
 					if (storeItems[k].equals(thing)) {
 						double cost = itemCost[k];
 						pplPay[i] += multiple * cost;
+						k = storeItems.length;
 					}
 				}
 				
@@ -56,13 +57,12 @@ public class A1Adept {
 	int i = 0;
 	int person = 0;
 	while (i < names.length - 1) {
-		if (pays[i] < pays[i + 1]) {
-			person = i + 1;
+		if (pays[i] < pays[person]) {
 			i++;
 		} else {
 			person = i;
 			i++;
-		}
+		} 
 	}
 	
 	DecimalFormat df2 = new DecimalFormat("0.00");
@@ -77,8 +77,7 @@ public class A1Adept {
 		int i = 0;
 		int person = 0;
 		while (i < names.length - 1) {
-			if (pays[i] > pays[i + 1]) {
-				person = i + 1;
+			if (pays[i] > pays[person]) {
 				i++;
 			} else {
 				person = i;
